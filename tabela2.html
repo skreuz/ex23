@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,20 +20,45 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white; 
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color:rgb(255, 255, 255);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(68, 67, 67);
+        }
+
+
         td.num{
             text-align: right;
         }
+
+        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPRION 
             THEAD
                 TR, TD, TH
             TBODY
@@ -41,10 +67,11 @@
                 TR, TD, TH
     -->
         <table>
+            <caption>População</caption>
             <thead>
                 <tr>
-                     <th>ESTADO</th>
-                     <th>POPULAÇÃ</th>
+                     <th scope="col">ESTADO</th>
+                     <th scope="col" style="width: 50px;">POPULAÇÃ</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,10 +90,17 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
-                    <td>000</td>
+                    <th scope="row ">Total de Habitantes</th>
+                    <td class="num">000</td>
                 </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem nobis quae dolorem unde praesentium voluptates reprehenderit, explicabo doloribus quasi iste dignissimos ab maxime ad natus autem illo ipsa quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, non laudantium? Similique, eum omnis ab perferendis, quo doloribus itaque numquam voluptatibus asperiores, corporis quas voluptatem porro dolorem voluptatum! Voluptas, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Voluptatem facere libero itaque corporis eos dolorum, doloremque, veniam assumenda corrupti ad odit fuga, earum obcaecati repellat velit aperiam in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos necessitatibus sequi facilis consequuntur ullam id nesciunt repudiandae aspernatur, nobis quod, eligendi minima exercitationem debitis officiis aliquid maiores ratione. Ab.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem nobis quae dolorem unde praesentium voluptates reprehenderit, explicabo doloribus quasi iste dignissimos ab maxime ad natus autem illo ipsa quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, non laudantium? Similique, eum omnis ab perferendis, quo doloribus itaque numquam voluptatibus asperiores, corporis quas voluptatem porro dolorem voluptatum! Voluptas, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Voluptatem facere libero itaque corporis eos dolorum, doloremque, veniam assumenda corrupti ad odit fuga, earum obcaecati repellat velit aperiam in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos necessitatibus sequi facilis consequuntur ullam id nesciunt repudiandae aspernatur, nobis quod, eligendi minima exercitationem debitis officiis aliquid maiores ratione. Ab.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem nobis quae dolorem unde praesentium voluptates reprehenderit, explicabo doloribus quasi iste dignissimos ab maxime ad natus autem illo ipsa quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, non laudantium? Similique, eum omnis ab perferendis, quo doloribus itaque numquam voluptatibus asperiores, corporis quas voluptatem porro dolorem voluptatum! Voluptas, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Voluptatem facere libero itaque corporis eos dolorum, doloremque, veniam assumenda corrupti ad odit fuga, earum obcaecati repellat velit aperiam in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos necessitatibus sequi facilis consequuntur ullam id nesciunt repudiandae aspernatur, nobis quod, eligendi minima exercitationem debitis officiis aliquid maiores ratione. Ab.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem nobis quae dolorem unde praesentium voluptates reprehenderit, explicabo doloribus quasi iste dignissimos ab maxime ad natus autem illo ipsa quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, non laudantium? Similique, eum omnis ab perferendis, quo doloribus itaque numquam voluptatibus asperiores, corporis quas voluptatem porro dolorem voluptatum! Voluptas, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Voluptatem facere libero itaque corporis eos dolorum, doloremque, veniam assumenda corrupti ad odit fuga, earum obcaecati repellat velit aperiam in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos necessitatibus sequi facilis consequuntur ullam id nesciunt repudiandae aspernatur, nobis quod, eligendi minima exercitationem debitis officiis aliquid maiores ratione. Ab.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem nobis quae dolorem unde praesentium voluptates reprehenderit, explicabo doloribus quasi iste dignissimos ab maxime ad natus autem illo ipsa quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, non laudantium? Similique, eum omnis ab perferendis, quo doloribus itaque numquam voluptatibus asperiores, corporis quas voluptatem porro dolorem voluptatum! Voluptas, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Voluptatem facere libero itaque corporis eos dolorum, doloremque, veniam assumenda corrupti ad odit fuga, earum obcaecati repellat velit aperiam in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos necessitatibus sequi facilis consequuntur ullam id nesciunt repudiandae aspernatur, nobis quod, eligendi minima exercitationem debitis officiis aliquid maiores ratione. Ab.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit exercitationem nobis quae dolorem unde praesentium voluptates reprehenderit, explicabo doloribus quasi iste dignissimos ab maxime ad natus autem illo ipsa quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, non laudantium? Similique, eum omnis ab perferendis, quo doloribus itaque numquam voluptatibus asperiores, corporis quas voluptatem porro dolorem voluptatum! Voluptas, asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Voluptatem facere libero itaque corporis eos dolorum, doloremque, veniam assumenda corrupti ad odit fuga, earum obcaecati repellat velit aperiam in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos necessitatibus sequi facilis consequuntur ullam id nesciunt repudiandae aspernatur, nobis quod, eligendi minima exercitationem debitis officiis aliquid maiores ratione. Ab.</p>
+        
 </body>
 </html>
